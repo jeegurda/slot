@@ -1,4 +1,4 @@
-const wordsInterval = 2000
+import { wordsInterval } from './params'
 
 let activeWord = null
 const words = Array.from(document.querySelectorAll('.dynamic-word p'))
