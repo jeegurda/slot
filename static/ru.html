@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="alternate icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./styles/bundle.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slot</title>
+  </head>
+  <body>
+    <section class="root">
+      <header>
+        <a href="/ru" class="logo">
+          <img class="logo-normal" src="./img/logo.svg" alt="Slot logo" width="71">
+          <img class="logo-white" src="./img/logo-white.svg" alt="Slot logo" width="71">
+        </a>
+        <a class="language" href="./en.html">EN</a>
+        <button class="beta-access form-show-button" type="button">Бета доступ</button>
+      </header>
+      <button class="beta-access-fixed form-show-button" type="button">Бета доступ</button>
+      <div class="space"></div>
+      <section class="loader">
+        <img src="./img/logo-short.svg" height="60" />
+      </section>
+      <section class="form">
+        <div class="form-container">
+          <form action="" class="beta-access-form">
+            <div class="form-hide">
+              <button class="form-hide-button" type="button"></button>
+            </div>
+            <div class="form-header">
+              <h4>Введите контактную информацию</h4>
+            </div>
+            <div class="form-content">
+                <div class="input">
+                  <input name="email" type="email" required placeholder=" ">
+                  <span class="placeholder">Email</span>
+                </div>
+                <div class="input select">
+                  <select name="occupation" required>
+                    <option value="">Специальность</option>
+                    <option value="1">Парикмахер</option>
+                    <option value="2">Фотограф</option>
+                    <option value="3">Репетитор</option>
+                  </select>
+                  <span class="select-placeholder">Специальность</span>
+                  <span class="select-value"></span>
+                </div>
+            </div>
+            <button class="button-black">Продолжить</button>
+            <div class="form-done">
+              <h4>Ваша заявка принята! До скорой встречи</h4>
+              <button class="button-black form-hide-button" type="button">До скорой</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="slides">
+        <div class="text-content first">
+          <h2>
+            Сервис онлайн записи<br>для
+            <div class="dynamic-word">
+              <p>профессионалов</p>
+              <p>косметологов</p>
+              <p>стоматологов</p>
+              <p>массажистов</p>
+              <p>фитнес-тренеров</p>
+              <p>маникюрщиков</p>
+              <p>фотографов</p>
+              <p>репетиторов</p>
+            </div>
+          </h2>
+          <h3>Онлайн-запись, управление рабочим календарем и ведение клиентской базы.</h3>
+        </div>
+        <div class="media-content first">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/service.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Управление рабочим календарем</h2>
+          <h3>Планируйте ваше рабочее расписание на месяц вперед и легко отслеживайте загруженость на каждый день.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/calendar.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Работа с клиентами</h2>
+          <h3>Храните базу всех ваших клиентов в приложении и легко взаимодействовуйте с ними.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/clients.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Управление графиком работы и перечнем услуг</h2>
+          <h3>Формируйте свое расписание, расставляя перерывы и выходные дни.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/schedule.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Статистика и аналитика</h2>
+          <h3>Анализируйте вашу статистику и оптимизируйте ваш график работы.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/stats.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Полезные виджеты</h2>
+          <h3>Следите за расписанием не заходя даже  в приложение.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/service.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Покупка сопутствующих товаров и расходников</h2>
+          <h3>Заказывайте товары и расходники по оптовым ценам прямо в нашем приложении.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/accessories.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="text-content">
+          <h2>Аренда лучших рабочих мест</h2>
+          <h3>Арендуйте рабочее место и следите за лучшими предложениями по лучшим ценам.</h3>
+        </div>
+        <div class="media-content">
+          <video playsinline muted loop preload="metadata">
+            <source data-src="./media/stats.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="website">
+        <div class="website-text">
+          <h2>Персональный сайт</h2>
+          <h3>Делитесь вашим персональным сайтом с вашими клиентами, чтобы они могли записаться на ваши услуги в два клика.</h3>
+        </div>
+        <div class="website-media">
+          <div class="website-media-container">
+            <video playsinline muted loop preload="metadata" class="page-media">
+              <source src="./media/website.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="plans">
+        <div class="plan standard">
+          <h4 class="plan-title">Standard</h4>
+          <div class="plan-price">
+            <span class="price-currency">₽</span>
+            <span class="price-value">0</span>
+            <span class="price-period">/м</span>
+          </div>
+          <div class="plan-bottom">
+            <ul class="plan-features">
+              <li>Работа с рабочим календарем</li>
+              <li>Ведение базы клиентов</li>
+              <li>Аналитика</li>
+              <li>Уведомления</li>
+              <li>Виджеты</li>
+              <li>Магазин товаров</li>
+              <li>Аренда рабочего места</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plan pro">
+          <h4 class="plan-title">Pro</h4>
+          <div class="plan-price">
+            <span class="price-currency">₽</span>
+            <span class="price-value">150</span>
+            <span class="price-period">/м</span>
+          </div>
+          <div class="plan-bottom">
+            <ul class="plan-features">
+              <li>Работа с рабочим календарем</li>
+              <li>Ведение базы клиентов</li>
+              <li>Аналитика</li>
+              <li>Уведомления</li>
+              <li>Виджеты</li>
+              <li>Магазин товаров с лучшими ценами</li>
+              <li>Аренда рабочего места</li>
+              <li>Запись через чат бота</li>
+              <li>Персональный сайт</li>
+              <li>Собственный домен</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="download">
+        <div class="download-title">Скачайте App по QR коду</div>
+        <div class="download-qr-code">
+          <img src="./img/qr-code.svg" alt="QR code" width="190" />
+        </div>
+        <a href="/" class="download-app-store">
+          <img src="./img/app-store.svg" alt="App Store" width="178" />
+        </a>
+      </section>
+      <footer>
+        <div class="footer-upper">
+          <div class="footer-logo">
+            <img src="./img/logo-short.svg" alt="Slot logo">
+          </div>
+          <nav>
+            <div class="nav-column">
+              <p class="nav-caption">Компания</p>
+              <ul>
+                <li><a href="/">О компании</a></li>
+                <li><a href="/">Работа</a></li>
+                <li><a href="/">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="nav-column">
+              <p class="nav-caption">Следите за нами</p>
+              <ul>
+                <li><a href="/">Instagram</a></li>
+                <li><a href="/">Facebook</a></li>
+                <li><a href="/">Twitter</a></li>
+                <li><a href="/">Telegram</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-lower">
+          © 2021 Slot Ltd
+        </div>
+      </footer>
+    </section>
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
