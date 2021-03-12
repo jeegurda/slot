@@ -94,6 +94,7 @@ const initApp = () => {
       }
       initSlides()
       addFormEvents()
+      console.log(1)
       headerTheming()
       hideLoader()
 
