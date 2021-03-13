@@ -113,6 +113,8 @@
     justify-content: center;
     font: inherit;
     transition: opacity 0.2s;
+    padding-bottom: min(15px, env(safe-area-inset-bottom));
+    box-sizing: content-box;
   }
 
   .form-container {

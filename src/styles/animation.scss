@@ -14,11 +14,11 @@
 }
 
 @keyframes word-out {
-  from { transform: translateY(0%); }
-  to { transform: translateY(-100%); }
+  from { transform: translate3d(0px, 0%, 0px); }
+  to { transform: translate3d(0px, -100%, 0px); }
 }
 
 @keyframes word-in {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0%); }
+  from { transform: translate3d(0px, 100%, 0px); }
+  to { transform: translate3d(0px, 0%, 0px); }
 }
