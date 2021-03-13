@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/ru.html" }
+  ],
+  "cleanUrls": true
+}
