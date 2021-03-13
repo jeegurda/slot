@@ -1,11 +1,12 @@
 {
   "name": "slot",
   "scripts": {
-    "watch-js": "rollup src/index.js -p terser -w -m -o js/bundle.js",
-    "watch-css": "sass --style compressed --watch src/index.scss styles/bundle.css",
-    "build-js": "rollup src/index.js -p terser -m -o js/bundle.js",
-    "build-css": "sass --style compressed src/index.scss styles/bundle.css",
+    "watch-js": "rollup src/scripts/index.js -p terser -w -m -o build/js/bundle.js",
+    "watch-css": "sass --style compressed --watch src/styles/index.scss build/css/bundle.css",
     "serve": "serve -p 5000",
+
+    "build-js": "rollup src/scripts/index.js -p terser -o build/js/bundle.js",
+    "build-css": "npx sass --style compressed --no-source-map src/styles/index.scss build/css/bundle.css",
 
     "build": "npm run build-js && npm run build-css"
   },
