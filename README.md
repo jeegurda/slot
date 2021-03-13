@@ -38,4 +38,4 @@ The build process is extremely lightweight and fast. Shouldn't take more than a 
     ```sh
     npm run serve
     ```
-    to serve `./build` directory at http://localhost:5000
+    to serve `./build` directory at http://localhost:5000/ru
