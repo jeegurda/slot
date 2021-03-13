@@ -28,11 +28,33 @@
     position: static;
     margin-bottom: 50px;
     padding-left: 16px;
+
+    .language {
+      padding: 0 16px;
+    }
+
+    /* Overwrite all dark theme rules */
+    &.over-plans {
+      .logo-normal {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .logo-white {
+        display: none;
+      }
+
+      .language {
+        color: black;
+      }
+
+      .beta-access {
+        background: black;
+        color: white;
+      }
+    }
   }
 
-  header .language {
-    padding: 0 16px;
-  }
 
   h2 {
     font-size: 34px;
@@ -64,6 +86,10 @@
     position: static;
     width: auto;
     padding: 0 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
   }
 
   .media-content {
@@ -71,18 +97,14 @@
     visibility: visible !important;
     position: static;
     width: auto;
-  }
 
-  .text-content:not(:last-child) {
-    margin-bottom: 65px;
-  }
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
 
-  .media-content:not(:last-child) {
-    margin-bottom: 130px;
-  }
-
-  .media-content video {
-    max-height: 400px;
+    video {
+      max-height: 400px;
+    }
   }
 
   .dynamic-word {
@@ -121,12 +143,9 @@
     max-width: none;
   }
 
-  .beta-access-fixed:hover {
-    opacity: 0.8;
-  }
-
   .website-text {
     text-align: left;
+    max-width: none;
   }
 
   .website {
@@ -167,37 +186,22 @@
     row-gap: 48px;
   }
 
-  /* Disable initial animation */
-
-  .root.initialized .text-content.first > * {
-    animation: none;
-  }
-
-  .root.initialized .media-content.first > * {
-    animation: none;
-  }
-
-  /* Overwrite all dark theme rules */
-
-  header.over-plans .logo-normal {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  header.over-plans .logo-white {
-    display: none;
-  }
-
-  header.over-plans .language {
-    color: black;
-  }
-
-  header.over-plans .beta-access {
-    background: black;
-    color: white;
+  .website-media {
+    padding: 0 15px;
   }
 
   .slides {
     overflow: visible;
+  }
+
+  /* Disable initial animation */
+  .root.initialized {
+    .text-content.first > * {
+      animation: none;
+    }
+
+    .media-content.first > * {
+      animation: none;
+    }
   }
 }
